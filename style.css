@@ -1,0 +1,523 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+:root {
+    --body-background: #0e0e0e;
+    --color-logo: #ff5b50;
+    --card-color: #252525;
+    --text-color: #fff;
+    --subtitle-color: #5a5757;
+    --black-text: #000;
+    --color-input: #0D0D0D;
+}
+body{
+    background-color: var(--body-background);
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    padding: 2em 2em 0 2em;
+}
+
+nav{
+    padding-bottom: 4em;
+}
+a{
+    color: var(--text-color);
+    font-size: 0.8em;
+}
+ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+li:first-child{
+    margin-right: auto;
+}
+li:nth-child(2){
+    margin-right: 2em;
+}
+li:nth-child(3){
+    margin-right: 2em;
+}
+li:last-child{
+    margin-left: auto;
+}
+#carteira{
+    background: #fff;
+    padding: 0.6em;
+    display: flex;
+    align-items: center;
+}
+#carteira a{
+    color: #000;
+    font-weight: bold;
+    font-size: 1em;
+}
+#carteira img{
+    padding: 0 1em 0.4em 0;
+}
+nav p{
+    color: #fff;
+    font-size: 2em;
+}
+.realce{
+    color: var(--color-logo);
+}
+#texto-aleatorio{
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+#bloco1domain p, #bloco2domain p{
+    color: var(--text-color);
+}
+#bloco1domain p:first-child{
+    margin-bottom: 3em;
+    font-size: 13px;
+    font-weight: 400;
+}
+#imagensDiferenciadas{
+    display: flex;
+    align-items: center;
+}
+#imagensDiferenciadas b{
+    display: block;
+}
+#bloco2domain p{
+    font-size: 3em;
+    font-weight: 700;
+}
+#bloco2domain{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+#bloco2domain img{
+    width: 8em;
+}
+#imagens{
+    text-align: center;
+    justify-content: center;
+    margin-top: 4em;
+    gap: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+#imagens img{
+    margin-top: 2em;
+    object-fit: cover;
+    width: 18em;
+    height: 10em;
+    border: 2px solid var(--subtitle-color);
+}
+#populares-da-semana{
+    margin-top: 5em;
+    padding: 0 0 0 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#h1Populares {
+    color: #fff;
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgs{
+    padding: 3em 9em 0 0 ;
+}
+.imgs:nth-child(1){
+    padding-right: 4em;
+}
+.imgs:nth-child(3){
+    padding-left: 5em;
+}
+.imgs:nth-child(4){
+    padding-right: 4em;
+}
+.imgs:nth-child(6){
+    padding-left: 5em;
+}
+#bannerEtexto{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+#bannerEtexto img{
+    width: 100%;
+    height: 100%
+}
+#texto-loremIpsum{
+    height: 80%;
+}
+#números-da-rede-social{
+    padding: 5em 3em 0;
+    border: 1px solid var(--subtitle-color) ;
+    border-left:0 ;
+}
+#números-da-rede-social p{
+    color: #fff;
+    font-size: 25px;
+    padding-bottom: 2em;
+}
+#números-da-rede-social b{
+    color: var(--subtitle-color);
+}
+#textoL{
+    padding: 2em 2em 0;
+    display: flex;
+    color: #fff;
+}
+#texto-marcado{
+    color: var(--color-logo);
+    text-decoration: underline;
+    
+}
+#textoL p{
+    padding-bottom: 2em;
+}
+#L{
+    padding-right: 3em;
+}
+#L a{
+    text-decoration: underline;
+    font-size: 15px;
+}
+#banner{
+    margin-top: 2em;
+}
+#populares-da-semana hr{
+    width: 1px;
+    height: 40vh;
+}
+.imgs p{
+    color: #fff;
+    padding-bottom: 1em;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.imgs p img{
+    margin-left: 8em;
+}
+#imgs-astronauta{
+    border: 2px solid var(--subtitle-color);
+}
+.imgs .astronauta{
+    color: var(--subtitle-color);
+}
+.imgs p .realce{
+    padding-left: 2em;
+}
+#h1Melhores-artistas{
+    color: #fff;
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#melhores-artistas{
+    margin-top: 3em;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 5em;
+    align-items: center;
+    justify-content: center;
+}
+.artistas{
+    display: flex;
+    background-color: var(--card-color);
+    padding: 2em 3em;
+}
+.artistas p, #artista-especial p{
+    padding: 1em 0 1em 2em;
+    color: #fff;
+}
+.artistas b, #artista-especial b{
+    padding-left: 2em;
+}
+#artista-especial{
+    display: flex;
+    background-color: var(--color-logo);
+    padding: 2em 3em;
+}
+#artista-especial p, #artista-especial .realce{
+    color: #fff;
+}
+#botão-todos-os-artistas{
+    margin: 3em 0 6em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#botão-todos-os-artistas p{
+    color: #fff;
+    padding-right: 1em;
+}
+footer{
+    background-color: var(--card-color);
+}
+#article-com-botão{
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+}
+#article-com-botão #arrow-black{
+    padding: 1.5em;
+    background-color: var(--color-logo);
+}
+#informações-adicionais{
+    display: flex;
+    border: 1px solid var(--subtitle-color);
+}
+#informações input:first-child{
+    margin-top: 1.5em;
+    background-color: var(--body-background);
+    border: 0;
+    padding: 10px;
+    width: 150px;
+}
+#informações input:last-child{
+    font-weight: 700;
+    border: 0;
+    padding: 10px;
+}
+#informações{
+    width: 38%;
+    padding: 3em 1.5em 3em 1.5em;
+    border-right: 1px solid var(--subtitle-color);
+}
+#informações p {
+    color: #fff;
+}
+#mais-informações{
+    width: 100%;
+    height: 50vh;
+    padding-top: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+#mais-informações b{
+    color: #fff;
+}
+#mais-informações p{
+    padding-top: 1em;
+    color: var(--subtitle-color);
+}
+#social-medias{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 4em;
+}
+#social-medias a{
+    color: var(--color-logo);
+    padding-left: 0.5em;
+    font-size: 16px;
+    text-decoration: underline;
+}
+#social-medias p:first-child{
+    margin-right: auto;
+    color: #fff;
+}
+#social-medias img{
+    padding-left: 2em;
+}
+
+@media (max-width: 800px) {
+    #main{
+        padding: 0.5em ;
+    }
+    nav{
+        padding-bottom: 2em;
+    }
+    nav p{
+        font-size: 15px;
+        width: 50px;
+    }
+    #carteira{
+        padding: 5px;
+    }
+    #carteira img{
+        width: 30px;
+        height: 30px;
+        padding-right: 5px;
+    }
+    #carteira a{
+        width: 80px;
+    }
+    li:nth-child(1){
+        width: 0px;
+    }
+    li:nth-child(2){
+        width: 100px;
+        margin-right: 0;
+    }
+    li:nth-child(3){
+        margin-right: 0em;
+        width: 0;
+    }
+    li:nth-child(4){
+        display: none;
+    }
+    #bloco1domain p{
+        text-align: center;
+    }
+    #bloco1domain br{
+        display: none;
+    }
+    #imagensDiferenciadas p{
+        padding-left: 10px;
+    }
+    #imagensDiferenciadas b{
+        text-align: left;
+    }
+    #texto-aleatorio{
+        display: block;
+    }
+    #texto-aleatorio img:last-child{
+        width: 100px;
+        height: 100px;
+        padding-left: 1em;
+    }
+    #bloco2domain br{
+        display: none;
+    }
+    #bloco2domain p{
+        font-size: 15px;
+        width: 15em;
+        margin-top: 2em;
+        text-align: center;
+    }
+    #imagens{
+        margin-top: 1em;
+    }
+    #imagens img{
+        width: 100px;
+        height: 70px;
+    }
+    #populares-da-semana{
+        padding: 1em;
+    }
+    #populares-da-semana hr{
+        display: none;
+    }
+    .imgs{
+        padding: 0 0 5em 0;
+    }
+    .imgs:nth-child(2){
+        padding: 0;
+    }
+    .imgs:nth-child(1){
+        padding-right: 0;
+    }
+    .imgs:nth-child(3){
+        padding-left: 0;
+    }
+    .imgs:nth-child(4){
+        padding-right: 0;
+    }
+    .imgs:nth-child(6){
+        padding-left: 0;
+    }
+    .imgs p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #bannerEtexto{
+        display: block;
+    }
+    #números-da-rede-social{
+        padding: 3em 3em 0;
+        text-align: center;
+    }
+    #números-da-rede-social p{
+        text-decoration: underline;
+    }
+    #textoL{
+        display: block;
+        padding: 1em;
+    }
+    #L{
+        padding-right: 0;
+        text-align: center;
+    }
+    #L p{
+        font-size: 15px;
+    }
+    #L:first-child{
+        padding-bottom: 2em;
+    }
+    .imgs #imgs-astronauta{
+        width: 300px;
+        height: 200px;
+    }
+    .artistas{
+        padding: 2em 1em;
+    }
+    .artistas p, #artista-especial p{
+       padding:1em 0 1em 1em;
+    }
+    .artistas b, #artista-especial b{
+        padding-left: 1em;
+    }
+    #artista-especial{
+        padding: 2em 1em;
+    }
+    #article-com-botão{
+        padding: 0.5em;
+    }
+    #article-com-botão img:first-child{
+        width: 200px;
+    }
+    #article-com-botão #arrow-black{
+        padding: 1em;
+    }
+    #informações-adicionais{
+        display: block;
+    }
+    #informações{
+        padding: 1.5em 1em;
+        width: 100%;
+        justify-content:space-around;
+        display: flex;
+        border: 0;
+    }
+    #informações{
+        align-items: center;
+        justify-content: center;
+    }
+    #informações form{
+        text-align: center;
+    }
+    #informações input:first-child{
+        margin-top: 0;
+        margin-bottom: 1.5em;
+    }
+    #informações br{
+        display: none;
+    }
+    #mais-informações{
+        border-top: 1px solid var(--subtitle-color);
+        height: 16em;
+    }
+    #social-medias{
+        padding: 2em;
+        border: 1px solid var(--subtitle-color);
+        border-top: 0px;
+    }
+}
