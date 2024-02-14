@@ -337,7 +337,7 @@ footer{
     padding-left: 2em;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 0px) {
     #main{
         padding: 0.5em ;
     }
@@ -519,5 +519,29 @@ footer{
         padding: 2em;
         border: 1px solid var(--subtitle-color);
         border-top: 0px;
+    }
+}
+@media (min-width: 650px){
+    nav p{
+        width: 10em;
+    }
+    #texto-aleatorio{
+        display: flex;
+    }
+    #bloco2domain{
+        height: 10em;
+    }
+    .imgs #imgs-astronauta{
+        object-fit: cover;
+        width: 15em;
+        height: 10em;
+    }
+    #imagens img{
+        object-fit: cover;
+        width: 15em;
+        height: 10em;
+    }
+    #populares-da-semana{
+        gap: 2em;
     }
 }
